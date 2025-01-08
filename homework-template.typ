@@ -62,7 +62,7 @@
     paper:"us-letter",
     header: context{
       if (counter(page).at(here()).first()==1) { none } 
-      else if (counter(page).at(here()).first()==2) {   
+      else {
         align(right, [*#author* | *#course_id | #title*])
       }
     },
